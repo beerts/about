@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernardo Teixeira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="images/logo2.png">
+</head>
+<header>
+    <nav class="navbar" id="navbar">
+        <ul class="navbar-links">
+            <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+    <button class="navbar-toggle" onclick="toggleNavbar()">☰</button>
+</header>
+<body>
+
+    <section class="hero-cartoon" id="home">
+        <div class="hero-text">
+            <h1 class="text">BERNARDO TEIXEIRA</h1>
+            <p class="descricao">HTML | CSS | PYTHON | DATABASES | EXCEL | POWERBI</p>
+            <a class="button-27" id="saibaMaisBtn">Saiba mais</a>
+            <a href="#about" class="scroll-down">
+                <i class="arrow-down"></i>
+            </a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-content">
+            <h2>SOBRE MIM | ABOUT ME</h2>
+            <p id="bio">Olá, eu sou Bernardo, 23 anos, brasileiro.<br>
+            Tenho conhecimento em Python, HTML, CSS, PowerBI e Excel.<br>
+            Frameworks como Streamlit, Flask, TKInter, Pandas e Matplotlib.<br>
+            Àreas de foco incluem Desenvolvimento Web, Back-end, Automação e Análise de Dados.<br>
+            Também estou estudando mais sobre Inteligência Artificial.<br>
+            Atualmente, trabalho em Tecnologia da Informação</p>
+            <button class="btn-translate" onclick="translateBio()" id="translateBtn">Translate</button>
+            <a href="#statistics" class="scroll-down">
+                <i class="arrow-down"></i>
+            </a>
+        </div>
+    </section>
+    
+    <section id="statistics">
+        <h1>PORQUE TER UM SITE?</h1>
+        <div class="stats-container">
+            <div class="stat">
+                
+                <h2><span class="count" data-target="90">0</span>%</h2>
+                <p>Mais de 90% dos consumidores em todo o Brasil pesquisam na internet antes de comprar produtos e/ou contratar serviços.</p>
+            </div>
+            <div class="stat">
+                <h2><span class="count" data-target="14000000">0</span></h2>
+                <p>Mais de 14 milhões de empreendedores individuais, micro e pequenas empresas possuem e fecham negócios pelo site.</p>
+            </div>
+            <div class="stat">
+                <h2><span class="count" data-target="100000000">0</span></h2>
+                <p>A internet no Brasil é acessada por mais de 100 milhões de consumidores todos os dias, incluindo finais de semana e feriados.</p>
+            </div>
+        </div>
+        <a href="#services" class="scroll-down">
+            <i class="arrow-down"></i>
+        </a>
+        
+    </section>
+    <div id="services">
+        <div class="services-content">
+            <h2>SERVIÇOS</h2>
+            <div class="services-list">
+                <div class="service-card python card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/python.png" alt="Python" class="service-image">
+                            <h3>PYTHON</h3>
+                            <p>Desenvolvimento de pequenos sistemas e automação de tarefas.</p>
+                            <button class="more-info-btn">Saiba Mais</button>
+                        </div>
+                        <div class="card-back">
+                            <p>→ Desenvolvimento de sistemas de cadastro, inventário, registro e financeiro. Intuitivos e faceis de utilizar<br><br>
+                                → Automação de tarefas repetitivas ou exaustivas, tais como lançamento de planilha<br><br> → Criação de sites complexos com Flask e Django</p>
+                                <a href="#contact" class="more-info-btn">Contato</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card excel card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/excel.png" alt="excel" class="service-image">
+                            <h3>EXCEL</h3>
+                            <p>Melhoria de planilhas, análise de dados e automação de tarefas.</p>
+                            <button class="more-info-btn">Saiba Mais</button>
+                        </div>
+                        <div class="card-back">
+                            <p>→ Melhoria de planilhas, criação de macro e planilhas interativas<br><br>
+                                → Desenvolvimento de gráficos e análise de dados<br><br>→ Criação de planilhas de acordo com demanda.</p>
+                                <a href="#contact" class="more-info-btn">Contato</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card htmlcss card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/htmlcss.png" alt="htmlcss" class="service-image">
+                            <h3>HTML ~ CSS</h3>
+                            <p>Desenvolvimento de sites empresariais ou pessoais.</p>
+                            <button class="more-info-btn">Saiba Mais</button>
+                        </div>
+                        <div class="card-back">
+                            <p>→ Criação de sites para empresa ou pessoal<br><br>→ Desenvolvimento de sites modernos e responsivos<br><br>
+                             → Criação de funções avançadas</p>
+                             <a href="#contact" class="more-info-btn">Contato</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card powerbi card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/powerbi.png" alt="powerbi" class="service-image">
+                            <h3>POWER BI</h3>
+                            <p>Criação de dashboards modernos e interativos.</p>
+                            <button class="more-info-btn">Saiba Mais</button>
+                        </div>
+                        <div class="card-back">
+                            <p>→ Criação de dashboards analíticos <br><br>→ Integração com Excel e Databases 
+                            <br><br>→ Análise de dados por meio de gráficos modernos</p>
+                            <a href="#contact" class="more-info-btn">Contato</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card formatacao card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/formatacao.png" alt="formatacao" class="service-image">
+                            <h3>FORMATAÇÃO E LIMPEZA</h3>
+                            <p>Realização de limpeza interna e externa do computador</p>
+                            <button class="more-info-btn">Saiba Mais</button>
+                        </div>
+                        <div class="card-back">
+                            <p>→ Formatação de computador<br><br>→ Tratamentos de malwares
+                            <br><br>→ Aumento de velocidade e remoção de travametos <br><br>→ Limpeza externa (sujeira, poeira, etc...) <br><br><p style="font-weight: 800;">(CONSULTE A ÁREA DE ATENDIMENTO)</p>
+                            <a href="#contact" class="more-info-btn">Contato</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card redes card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/rede.png" alt="rede" class="service-image">
+                            <h3>SUPORTES INTERNET</h3>
+                            <p>Suportes gerais de rede ETHERNET ou WI-FI</p>
+                            <button class="more-info-btn">Saiba Mais</button>
+                        </div>
+                        <div class="card-back">
+                            <p>→ Análise de problemas em redes Ethernet e Wi-fi.<br><br>→ Realização de serviços preventivos 
+                            <br><br>→ Cabeamento residencial ou empresarial <br><br><p style="font-weight: 800;">(CONSULTE A ÁREA DE ATENDIMENTO)</p>
+                            <a href="#contact" class="more-info-btn">Contato</a>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </section>
+    <section id="contact">
+        <h1>CONTATO</h1>
+        <div class="contact-container">
+            <div class="contact-icons">
+                <ul class="icons">
+                    <li><a href="wa.link/u1u1ap" target="_blank"><image src="images/whatsapp.png"></image>+55 (37) 99988-9399 ↗</li></a>
+                    <li><a href="http://github.com/beerts" target="_blank"><image src="images/github.png"></image>github.com/beerts ↗</li></a>
+                    <li><a href="mailto:bernardort3@Outlook.com"><image src="images/email.png"></image> bernardort32@outlook.com ↗</li></a>
+                </ul>
+            </div>
+        
+            <!-- Formulário -->
+            <div class="contact-form">
+                <form action="/enviar-formulario" method="POST">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="numero">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+        
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

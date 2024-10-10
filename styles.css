@@ -1,0 +1,715 @@
+/* Estilo geral do site */
+* {
+    margin: 0;
+    padding: 50;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Giga', cursive;
+    background-color: rgba(250,250,250,255);
+    
+
+}
+
+/* Navbar escondida por padrão */
+/* Navbar escondida por padrão */
+.navbar {
+    position: fixed;
+    width: 200px; /* Largura da navbar */
+    top: 60px; /* Ajuste para a altura da navbar */
+    right: -200px; /* Começa fora da tela à direita */
+    z-index: 1000;
+    padding: 10px;
+    opacity: 0; /* Invisível por padrão */
+    transition: top 0.5s ease, opacity 0.5s ease; /* Transição suave */
+
+}
+
+/* Quando a navbar está visível */
+.navbar.show {
+    right: 0; /* A navbar aparece */
+    opacity: 1; /* Fica visível */
+}
+
+/* Estilo das links da navbar */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Alinha verticalmente */
+    align-items: flex-start; /* Alinhamento à esquerda */
+}
+
+.navbar-links li {
+    margin-bottom: 20px; /* Espaço entre os itens */
+}
+
+.navbar-links a {
+    /* Manter o mesmo estilo de link */
+    appearance: none;
+    border: 1px solid #1A1A1A;
+    border-radius: 50px;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 20px; /* Ajuste o preenchimento conforme necessário */
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    background-color: white;
+}
+
+.navbar-links a:hover {
+    box-shadow: rgb(0, 0, 0) 4px 8px 0px;
+    transform: translateY(-5px);
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Alinha verticalmente */
+    align-items: flex-start; /* Alinhamento à esquerda */
+}
+/* Botão de menu */
+.navbar-toggle {
+    color: #000;
+    font-size: 2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 1001;
+    transition: all 0.4s ease;
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-toggle:hover {
+    transform: translateY(-5px);
+}   
+
+/* Hero section */
+.hero-cartoon {
+    background: transparent;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-color:rgb(255, 255, 255);
+}
+
+.hero-text h1 {
+    font-size: 3vw;
+    color: #000;
+    animation: motion 2s 1;
+    position: relative;
+    margin-bottom: 30px;
+    background-color:rgb(255, 255, 255);
+}
+
+.hero-text p {
+    font-size: 1rem;
+    margin-bottom: 50px;
+    color: #000;
+    transition:6s;
+}
+
+@keyframes motion{
+    0%{
+        color: #000000;
+        margin-bottom: -42px;
+    }
+    30%{
+        letter-spacing: 5px;
+        margin-bottom: -42px;
+        }
+    85%{
+        letter-spacing: 2px;
+        margin-bottom: -42px;
+    }
+}
+
+/* Estilo do botão */
+.button-27 {
+    appearance: none;
+    background-color: #9affcc;
+    border: 1px solid #1A1A1A;
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow:  rgb(0, 0, 0) 4px 8px 0px;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    padding: 16px 40px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    user-select: none;
+    width: auto;
+    min-width: 150px;  
+}
+
+.button-27:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+#about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color:rgb(255, 255, 255);
+    border-top: 4px solid black;
+
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(29, 29, 29);
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+.btn-translate {
+    appearance: none;
+    background-color: #9affcc;
+    border: 1px solid #1A1A1A;
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow:  rgb(0, 0, 0) 4px 8px 0px;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    user-select: none;
+    width: auto;
+    min-width: 150px;
+    margin-top: 30px;
+}
+
+.btn-translate:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+/* Seção de Serviços */
+#services {
+    text-align: center;
+    border-top: 4px solid black;
+    background-color:rgb(255, 255, 255);
+}
+
+.services-content h2 {
+    font-size: 2rem;
+    margin: 30px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilo geral do cartão de serviço */
+.service-card {
+    background: #ffffff;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
+    
+}
+
+/* Estilo das imagens dentro dos cards */
+.service-image {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.service-card p {
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+}
+
+/* Estilos de cores para diferentes serviços */
+.powerbi {
+    background-color: rgb(255, 255, 51);
+}
+
+.excel {
+    background-color: rgb(91, 255, 91);
+}
+
+.htmlcss {
+    background-color: rgb(255, 179, 66);
+}
+
+.python {
+    background-color: rgb(0, 179, 255);
+}
+
+.formatacao {
+    background-color: rgba(103, 103, 103, 0.444);
+}
+.redes{
+    background-color: rgb(255, 72, 72);
+}
+
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .services-list {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .button-27 {
+        width: 80%;
+    }
+}
+
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .more-info-btn{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: #0000002d;
+  }
+  
+
+  .more-info-btn span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .more-info-btn:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00000052;
+    transition: all .15s;
+    border-radius: 30px;
+  }
+  
+  .more-info-btn:hover{
+    color: #000000;
+  }
+  
+  .more-info-btn:hover:after{
+    width: 100%;
+
+  }
+  
+  /* Estilo para a seção de contato */
+#contact {
+    padding: 50px 20px  ;
+    text-align: center;
+    background-color:rgb(255, 255, 255);
+    border-top: 4px solid black;
+    
+    
+}
+
+#contact h1{
+    font-size: 50px;
+}
+
+/* Estilo geral para o contêiner */
+.contact-container {
+    display: flex; /* Usar Flexbox para layout em colunas */
+    justify-content: space-between; /* Separar os dois elementos */
+    align-items: flex-start; /* Alinhar o conteúdo no topo */
+    margin: 50px;
+     
+           
+}
+
+/* Estilo para a seção de ícones */
+.contact-icons {
+    flex: 1; /* Mantém a flexibilidade da seção */
+    padding-right: 30px; /* Espaçamento à direita */
+    
+}
+
+.contact-icons ul {
+    list-style-type: none; /* Remove marcadores */
+    padding: 0;
+    
+    
+}
+
+.contact-icons li {
+    margin-bottom: 20px; /* Espaçamento entre os itens */
+    font-size: 18px; /* Tamanho da fonte para o texto */
+    display: flex; /* Permite alinhar o ícone e o texto na mesma linha */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    padding-top: 5px; 
+}
+
+.contact-icons a{
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-icons a:hover{
+    color: #939393;
+}
+
+
+.contact-icons img {
+    width: 30px; /* Define a largura da imagem */
+    height: auto; /* Ajusta a altura proporcionalmente à largura */
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+
+/* Estilo para a seção do formulário */
+.contact-form {
+    flex: 1.5; /* Ocupa mais espaço do que os ícones */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column; /* Itens em colunas (campo embaixo do outro) */
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow:  rgb(0, 0, 0) 4px 8px 0px;
+}
+
+.contact-form button {
+    appearance: none;
+    background-color: #9affcc;
+    border: 1px solid #1A1A1A;
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow:  rgb(0, 0, 0) 4px 8px 0px;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    user-select: none;
+    width: auto;
+    min-width: 150px;
+    margin-top: 30px;
+}
+
+.contact-form button:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+    
+}
+
+
+  .card {   
+    width: 300px;
+    height: 400px; /* Altura do cartão */
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s; /* Transição suave ao virar */
+    transform-style: preserve-3d; /* Mantém a estrutura 3D ao virar */
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta o verso ao virar */
+}
+
+.card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-back {
+    color: white; /* Cor do texto no verso */
+    transform: rotateY(180deg); /* Gira o verso do cartão */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.card-back p{
+    font-size: 15px;
+}
+
+/* Adiciona efeito de hover para girar o cartão */
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Muda a direção para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .contact-icons {
+        padding-right: 0; /* Remove o preenchimento direito */
+        margin-bottom: 20px; /* Espaçamento entre os ícones e o formulário */
+    }
+
+    .contact-icons a{
+        font-size: 12px;
+    }
+    .contact-form {
+        width: 100%; /* Formulário ocupa a largura total */
+        max-width: 400px; /* Limite a largura máxima do formulário */
+    }
+
+    .contact-content {
+        max-width: 90%; /* Contêiner de contato se ajusta à largura */
+    }
+
+    .social-icons {
+        flex-direction: column; /* Alinhamento vertical para ícones sociais */
+        align-items: center; /* Centraliza os ícones */
+    }
+
+    .social-icon {
+        width: 90%; /* Ícone ocupa a largura total */
+    }
+    .hero-text h1 {
+        font-size: 1.2rem; /* Tamanho menor para telas pequenas */
+    }
+
+    .hero-text p {
+        font-size: 0.75rem; /* Tamanho menor para telas pequenas */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-toggle {
+        font-size: 1.5rem; /* Tamanho menor do botão de menu */
+        padding: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem; /* Tamanho menor para h1 */
+    }
+
+    .hero-text p {
+        font-size: 1rem; /* Tamanho menor para parágrafo */
+    }
+
+    .about-content h2 {
+        font-size: 1.5rem; /* Tamanho menor para h2 */
+    }
+
+    .about-content p {
+        font-size: 1rem; /* Tamanho menor para parágrafo */
+    }
+
+    .services-content h2 {
+        font-size: 1.5rem; /* Tamanho menor para h2 */
+    }
+
+    .services-list .service-card h3 {
+        font-size: 1.2rem; /* Tamanho menor para h3 */
+    }
+
+    .service-card p {
+        font-size: 1rem; /* Tamanho menor para parágrafo */
+    }
+
+    .button-27 {
+        width: 80%; /* Botão ocupa 80% da largura */
+        font-size: 1rem; /* Tamanho menor do botão */
+    }
+
+    .btn-translate {
+        width: 80%; /* Botão ocupa 80% da largura */
+        font-size: 1rem; /* Tamanho menor do botão */
+    }
+
+    .more-info-btn {
+        width: 80%; /* Botão ocupa 80% da largura */
+    }
+
+    .more-info-btn {
+        width: 80%; /* Botão ocupa 80% da largura */
+    }
+
+    .card-back p{
+        font-size: 15px;
+    }
+}   
+
+#statistics {
+    background-color:rgb(255, 255, 255);
+    padding: 50px 0;
+    text-align: center;
+    border-top: 4px solid black;
+   
+
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat {
+    background: #ffffff;
+    border: 1px solid #1A1A1A;
+    border-radius: 15px;
+    padding: 30px;
+    width: 30%;
+    margin: 20px;
+    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.stat h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.stat p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat {
+        width: 90%; /* Ajusta a largura para ocupar 90% da tela em dispositivos móveis */
+        margin: 20px 0;
+    }
+
+    .stat h2 {
+        font-size: 2rem;
+    }
+
+    .stat p {
+        font-size: 1rem;
+    }
+}
+.scroll-down {
+    display: block;
+    margin: 20px auto;
+    font-size: 24px;
+    color: #000; /* Cor da setinha */
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.scroll-down:hover {
+    transform: translateY(5px); /* Efeito de hover */
+}
+
+.arrow-down::after {
+    font-family: 'Courier New', Courier, monospace;
+    content: '↓'; /* Adiciona a setinha */
+    font-size: 80px; /* Ajuste o tamanho da setinha conforme necessário */
+    display: block;
+    margin-top: 5px; /* Espaço acima da setinha */
+}
+
